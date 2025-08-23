@@ -165,7 +165,7 @@ function App() {
             <a href="https://instagram.com/tapiwamla" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 bg-white text-black flex items-center justify-center hover:bg-gray-200 hover:scale-110 transition-all duration-300">
               <FaInstagram className="text-base sm:text-xl" />
             </a>
-            <a href="https://facebook.com/tapiwamla" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 bg-white text-black flex items-center justify-center hover:bg-gray-200 hover:scale-110 transition-all duration-300">
+            <a href="https://facebook.com/tapiwamla.me" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 bg-white text-black flex items-center justify-center hover:bg-gray-200 hover:scale-110 transition-all duration-300">
               <FaFacebook className="text-base sm:text-xl" />
             </a>
             <a href="https://twitter.com/tapiwamla" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 bg-white text-black flex items-center justify-center hover:bg-gray-200 hover:scale-110 transition-all duration-300">
@@ -303,7 +303,7 @@ function App() {
             <a href="https://instagram.com/tapiwamla" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 border border-gray-600 text-gray-400 flex items-center justify-center hover:border-white hover:text-white hover:scale-110 transition-all duration-300">
               <FaInstagram className="text-base sm:text-xl" />
             </a>
-            <a href="https://facebook.com/tapiwamla" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 border border-gray-600 text-gray-400 flex items-center justify-center hover:border-white hover:text-white hover:scale-110 transition-all duration-300">
+            <a href="https://facebook.com/tapiwamla.me" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 border border-gray-600 text-gray-400 flex items-center justify-center hover:border-white hover:text-white hover:scale-110 transition-all duration-300">
               <FaFacebook className="text-base sm:text-xl" />
             </a>
             <a href="https://twitter.com/tapiwamla" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 border border-gray-600 text-gray-400 flex items-center justify-center hover:border-white hover:text-white hover:scale-110 transition-all duration-300">
