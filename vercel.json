@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/masterclass",
+      "destination": "https://paystack.shop/pay/wordpress-masterclass-event",
+      "permanent": true
+    }
+  ]
+}
