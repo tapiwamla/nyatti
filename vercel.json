@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/masterclass",
+      "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeArtV6m2BQZ49s_WgJLvz2tcAuaRh90bqymQHMj47jrGHARw/viewform?usp=header",
+      "permanent": false
+    },
+    {
+      "source": "/live",
+      "destination": "https://meet.google.com/cyz-xstw-nan",
+      "permanent": false
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html data-shade="950" data-rounded="3xlarge" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nyatti.com - Ecommerce | Web Apps | Websites</title>
+        <meta name="description" content="Professional web development services - ecommerce, web apps, and business websites" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://nyatti.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Nyatti.com - Professional Web Development" />
+        <meta property="og:description" content="Professional web development services - ecommerce, web apps, and business websites" />
+        <meta property="og:image" content="/images/og-cover.png" />
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="nyatti.com" />
+        <meta property="twitter:url" content="https://nyatti.com/" />
+        <meta name="twitter:title" content="Nyatti.com - Professional Web Development" />
+        <meta name="twitter:description" content="Professional web development services - ecommerce, web apps, and business websites" />
+        <meta name="twitter:image" content="/images/og-cover.png" />
+    </head>
+    
+    <body class="bg-white dark:bg-gray-950">
+    <!-- Header Component - include content from components/Header.html -->
+    <div id="header-component"></div>
+    
+    <!-- Hero Component - include content from components/Hero.html -->
+    <div id="hero-component"></div>
+    
+    <!-- Services Component - include content from components/Services.html -->
+    <div id="services-component"></div>
+
+    <!-- Intro Component - include content from components/Intro.html -->
+    <div id="intro-component"></div>
+
+    <!-- WhyUs Component - include content from components/WhyUs.html -->
+    <div id="whyus-component"></div>
+
+    <!-- Portfolio Component - include content from components/Portfolio.html -->
+    <div id="portfolio-component"></div>
+
+    <!-- Testimonials Component - include content from components/Testimonials.html -->
+    <div id="testimonials-component"></div>
+
+    <!-- Contact Component - include content from components/Contact.html -->
+    <div id="contact-component"></div>
+    
+    <!-- Footer Component - include content from components/Footer.html -->
+    <div id="footer-component"></div>
+    
+    <script type="module" src="./main.js"></script>
+    <script>
+        // Function to load component content
+        async function loadComponent(componentId, filePath) {
+            try {
+                const response = await fetch(filePath);
+                const content = await response.text();
+                document.getElementById(componentId).innerHTML = content;
+            } catch (error) {
+                console.error(`Error loading component ${componentId}:`, error);
+            }
+        }
+
+        // Load all components when DOM is loaded
+        document.addEventListener('DOMContentLoaded', async function() {
+            await Promise.all([
+                loadComponent('header-component', 'components/Header.html'),
+                loadComponent('hero-component', 'components/Hero.html'),
+                loadComponent('services-component', 'components/Services.html'),
+                loadComponent('intro-component', 'components/Intro.html'),
+                loadComponent('whyus-component', 'components/WhyUs.html'),
+                loadComponent('portfolio-component', 'components/Portfolio.html'),
+                loadComponent('testimonials-component', 'components/Testimonials.html'),
+                loadComponent('contact-component', 'components/Contact.html'),
+                loadComponent('footer-component', 'components/Footer.html')
+            ]);
+            
+            // Initialize mobile menu functionality after components are loaded
+            const mobileMenuButton = document.querySelector('[data-toggle="mobile-menu"]');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+    <script type="module">
+        import Swiper from 'swiper/bundle';
+        import { Pagination } from 'swiper/modules';
+        import 'swiper/css/bundle';
+        import 'swiper/css/pagination';
+        import 'swiper/css/effect-cards'
+
+        // Wait for components to load before initializing Swiper
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                new Swiper('.proofSlides', {
+                    effect: "cube",
+                    cubeEffect : {
+                        slideShadows: false,
+                        shadow: false,
+                        shadowOffset: 20,
+                        shadowScale: 0.94,
+                    },
+                    loop: true,
+                    autoplay : {
+                        delay: 3000,
+                        duration : 500
+                    },
+                    grabCursor: true,
+                    modules: [Pagination],
+                    centeredSlides: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                    }
+                });
+            }, 100); // Small delay to ensure DOM is fully loaded
+
+            // Handle navigation to portfolio sections
+            function handlePortfolioNavigation() {
+                const path = window.location.pathname;
+                let targetId = null;
+
+                switch(path) {
+                    case '/software':
+                        targetId = 'software';
+                        break;
+                    case '/ecommerce':
+                        targetId = 'ecommerce';
+                        break;
+                    case '/websites':
+                        targetId = 'websites';
+                        break;
+                }
+
+                if (targetId) {
+                    setTimeout(() => {
+                        const element = document.getElementById(targetId);
+                        if (element) {
+                            element.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }, 500); // Wait for components to load
+                }
+            }
+
+            // Handle navigation on page load
+            handlePortfolioNavigation();
+
+            // Handle navigation clicks
+            document.addEventListener('click', function(e) {
+                const link = e.target.closest('a');
+                if (link && link.href) {
+                    const url = new URL(link.href);
+                    if (url.pathname === '/software' || url.pathname === '/ecommerce' || url.pathname === '/websites') {
+                        e.preventDefault();
+                        history.pushState(null, '', url.pathname);
+                        handlePortfolioNavigation();
+                    }
+                }
+            });
+
+            // Handle back/forward navigation
+            window.addEventListener('popstate', handlePortfolioNavigation);
+        });
+    </script>
+    </body>
+</html>
