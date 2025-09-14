@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', function() {
         mainHeader.dataset.state = mainHeader.dataset.state === "active" ? "closed" : "active";
       });
     }
-  }, 200);
+  }, 500); // Increased delay to ensure components are loaded
 });

@@ -78,15 +78,6 @@
                 loadComponent('footer-component', 'components/Footer.html')
             ]);
             
-            // Initialize mobile menu functionality after components are loaded
-            const mobileMenuButton = document.querySelector('[data-toggle="mobile-menu"]');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
         });
     </script>
     <script type="module">
