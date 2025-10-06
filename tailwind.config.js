@@ -19,6 +19,7 @@ module.exports = {
                 success : colors.lime,
                 info : colors.blue,
                 gray : colors.zinc,
+                'dark-charcoal': '#0d0d0d',
             }),
         }
         

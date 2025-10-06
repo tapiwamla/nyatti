@@ -58,10 +58,10 @@
         </script>
     </head>
     
-    <body class="bg-white dark:bg-gray-950">
+    <body class="bg-white dark:bg-dark-charcoal">
     <!-- Header Component -->
     <header id="header" class="group">
-    <nav class="fixed overflow-hidden z-20 w-full border-b bg-white/50 dark:bg-gray-950/50 backdrop-blur-2xl">
+    <nav class="fixed overflow-hidden z-20 w-full border-b bg-white/50 dark:bg-dark-charcoal/50 backdrop-blur-2xl">
         <div class="px-6 m-auto max-w-6xl ">
             <div class="flex flex-wrap items-center justify-between py-2 sm:py-4">
                 <div class="w-full items-center flex justify-between lg:w-auto">
@@ -81,22 +81,34 @@
                 </div>
                 <div id="mobile-menu" class="w-full group-data-[state=active]:h-fit h-0 lg:w-fit flex-wrap justify-end items-center space-y-8 lg:space-y-0 lg:flex lg:h-fit md:flex-nowrap overflow-hidden lg:block">
                     <div class="mt-6 dark:text-body md:-ml-4 lg:pr-4 lg:mt-0">
-                        <ul class="space-y-6 tracking-wide text-base lg:text-sm lg:flex lg:space-y-0">
+                        <ul class="space-y-6 tracking-wide text-base lg:text-sm lg:flex lg:space-y-0 lg:items-center">
                             <li>
                                 <a href="/software" class="hover:link md:px-4 block">
                                     <span>Software</span>
                                 </a>
                             </li>
-
+                            <li class="hidden lg:block text-gray-300 dark:text-gray-600">|</li>
                             <li>
                                 <a href="/ecommerce" class="hover:link md:px-4 block">
                                     <span>Ecommerce</span>
                                 </a>
                             </li>
-
+                            <li class="hidden lg:block text-gray-300 dark:text-gray-600">|</li>
                             <li>
                                 <a href="/websites" class="hover:link md:px-4 block">
                                     <span>Websites</span>
+                                </a>
+                            </li>
+                            <li class="hidden lg:block text-gray-300 dark:text-gray-600">|</li>
+                            <li>
+                                <a href="/seo" class="hover:link md:px-4 block">
+                                    <span>SEO</span>
+                                </a>
+                            </li>
+                            <li class="hidden lg:block text-gray-300 dark:text-gray-600">|</li>
+                            <li>
+                                <a href="/optimization" class="hover:link md:px-4 block">
+                                    <span>Optimize</span>
                                 </a>
                             </li>
                         </ul>
@@ -186,17 +198,17 @@
     <div class="pt-36">
         <div class="mx-auto px-6 max-w-6xl">
             <div class="relative">
-                <div class="relative z-10 grid gap-3 grid-cols-3">
-                    <div class="card variant-outlined col-span-full lg:col-span-1 overflow-hidden relative">
-                        <div class="p-6">
-                            <div class="relative aspect-video w-full mb-4 overflow-hidden rounded-lg">
+                <div class="relative z-10 grid gap-3 grid-cols-1 md:grid-cols-2">
+                    <div class="card variant-outlined overflow-hidden relative">
+                        <div class="flex flex-col sm:flex-row gap-6 p-6">
+                            <div class="relative w-full sm:w-1/3 aspect-video sm:aspect-square overflow-hidden rounded-lg flex-shrink-0">
                                 <img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Applications" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-                            <div class="text-center relative z-10 space-y-4">
+                            <div class="flex flex-col justify-center space-y-4 flex-1">
                                 <h2 class="text-xl font-semibold text-title">Web Applications</h2>
                                 <p class="text-body">Custom web applications built with modern technologies to solve complex business problems and streamline operations.</p>
-                                <a href="/software" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                <a href="/software" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <rect width="7" height="7" x="3" y="3" rx="1"/>
                                         <rect width="7" height="7" x="14" y="3" rx="1"/>
@@ -208,16 +220,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card variant-outlined col-span-full lg:col-span-1 overflow-hidden relative">
-                        <div class="p-6">
-                            <div class="relative aspect-video w-full mb-4 overflow-hidden rounded-lg">
+                    <div class="card variant-outlined overflow-hidden relative">
+                        <div class="flex flex-col sm:flex-row gap-6 p-6">
+                            <div class="relative w-full sm:w-1/3 aspect-video sm:aspect-square overflow-hidden rounded-lg flex-shrink-0">
                                 <img src="https://images.unsplash.com/photo-1635405074683-96d6921a2a68?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ecommerce Shops" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-                            <div class="text-center relative z-10 space-y-4">
+                            <div class="flex flex-col justify-center space-y-4 flex-1">
                                 <h2 class="text-xl font-semibold text-title">Ecommerce Shops</h2>
                                 <p class="text-body">Complete online stores with secure payment processing, inventory management, and customer-friendly shopping experiences.</p>
-                                <a href="/ecommerce" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                <a href="/ecommerce" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
                                         <circle cx="12" cy="12" r="3"/>
@@ -227,21 +239,58 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card variant-outlined col-span-full lg:col-span-1 overflow-hidden relative">
-                        <div class="p-6">
-                            <div class="relative aspect-video w-full mb-4 overflow-hidden rounded-lg">
+                    <div class="card variant-outlined overflow-hidden relative">
+                        <div class="flex flex-col sm:flex-row gap-6 p-6">
+                            <div class="relative w-full sm:w-1/3 aspect-video sm:aspect-square overflow-hidden rounded-lg flex-shrink-0">
                                 <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Professional Websites" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-                            <div class="text-center relative z-10 space-y-4">
+                            <div class="flex flex-col justify-center space-y-4 flex-1">
                                 <h2 class="text-xl font-semibold text-title">Professional Websites</h2>
                                 <p class="text-body">Beautiful, responsive websites that represent your brand professionally and drive business growth.</p>
-                                <a href="/websites" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                <a href="/websites" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
                                         <circle cx="12" cy="12" r="3"/>
                                     </svg>
                                     See Portfolio
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card variant-outlined overflow-hidden relative">
+                        <div class="flex flex-col sm:flex-row gap-6 p-6">
+                            <div class="relative w-full sm:w-1/3 aspect-video sm:aspect-square overflow-hidden rounded-lg flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Search Engine Optimization" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            <div class="flex flex-col justify-center space-y-4 flex-1">
+                                <h2 class="text-xl font-semibold text-title">Search Engine Optimization (SEO)</h2>
+                                <p class="text-body">Boost your website's visibility with tailored SEO strategies that help your business rank higher on Google and convert more visitors.</p>
+                                <a href="/seo" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <path d="m21 21-4.35-4.35"/>
+                                    </svg>
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card variant-outlined overflow-hidden relative">
+                        <div class="flex flex-col sm:flex-row gap-6 p-6">
+                            <div class="relative w-full sm:w-1/3 aspect-video sm:aspect-square overflow-hidden rounded-lg flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Website & Cost Optimization" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            <div class="flex flex-col justify-center space-y-4 flex-1">
+                                <h2 class="text-xl font-semibold text-title">Website & Cost Optimization</h2>
+                                <p class="text-body">Cut unnecessary expenses and maximize your website's value. Eliminate wasted hosting costs and optimize performance for faster speeds and better user experience.</p>
+                                <a href="/optimization" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                    Learn More
                                 </a>
                             </div>
                         </div>
@@ -563,7 +612,7 @@
                         <div class="card variant-outlined group">
                             <div class="flex gap-3">
                                 <span class="relative avatar block text-lg sz-md">
-                                    <img class="h-full w-full object-cover" alt="Samuel Wanjahi" src="https://api.dicebear.com/7.x/avataaars/svg?seed=samuel&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full object-cover" alt="Samuel Wanjahi" src="https://api.dicebear.com/7.x/avataaars/svg?seed=wanjahisamuel&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-title">Samuel W.</h3>
@@ -581,7 +630,7 @@
                         <div class="card variant-outlined group">
                             <div class="flex gap-3">
                                 <span class="relative avatar block text-lg sz-md">
-                                    <img class="h-full w-full object-cover" alt="Mercy Mwaura" src="https://api.dicebear.com/7.x/avataaars/svg?seed=mercy&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full object-cover" alt="Mercy Mwaura" src="https://api.dicebear.com/7.x/avataaars/svg?seed=mercyfemale&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Mercy M.</h3>
@@ -599,7 +648,7 @@
                         <div class="card variant-outlined group">
                             <div class="flex gap-3">
                                 <span class="relative avatar block text-lg sz-md">
-                                    <img class="h-full w-full object-cover" alt="Tafadzwa Bere" src="https://api.dicebear.com/7.x/avataaars/svg?seed=tafadzwa&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full object-cover" alt="Tafadzwa Bere" src="https://api.dicebear.com/7.x/avataaars/svg?seed=tafadzwa&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728&facialHair=beardMajestic,beardMedium,moustacheMagnum" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Tafadzwa B.</h3>
@@ -617,7 +666,7 @@
                         <div class="card variant-outlined group">
                             <div class="flex gap-3">
                                 <span class="relative avatar block text-lg sz-md">
-                                    <img class="h-full w-full object-cover" alt="Doreen Shiku" src="https://api.dicebear.com/7.x/avataaars/svg?seed=doreen&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full object-cover" alt="Doreen Shiku" src="https://api.dicebear.com/7.x/avataaars/svg?seed=shikudoreen&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Doreen S.</h3>
@@ -635,7 +684,7 @@
                         <div class="card variant-outlined group">
                             <div class="flex gap-3">
                                 <span class="relative avatar block text-lg sz-md">
-                                    <img class="h-full w-full object-cover" alt="John Guda" src="https://api.dicebear.com/7.x/avataaars/svg?seed=john&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full object-cover" alt="John Guda" src="https://api.dicebear.com/7.x/avataaars/svg?seed=john&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728&facialHair=beardMajestic,beardMedium,moustacheMagnum" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">John G.</h3>
@@ -653,7 +702,7 @@
                         <div class="card variant-outlined group">
                             <div class="flex gap-3">
                                 <span class="relative avatar block text-lg sz-md">
-                                    <img class="h-full w-full object-cover" alt="Simba Mutandadzi" src="https://api.dicebear.com/7.x/avataaars/svg?seed=simba&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full object-cover" alt="Simba Mutandadzi" src="https://api.dicebear.com/7.x/avataaars/svg?seed=simba&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728&facialHair=beardMajestic,beardMedium,moustacheMagnum" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Simba M.</h3>
@@ -671,7 +720,7 @@
                         <div class="card variant-outlined group">
                             <div class="flex gap-3">
                                 <span class="relative avatar block text-lg sz-md">
-                                    <img class="h-full w-full object-cover" alt="Exode M." src="https://api.dicebear.com/7.x/avataaars/svg?seed=exode&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full object-cover" alt="Exode M." src="https://api.dicebear.com/7.x/avataaars/svg?seed=exodefemale&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Exode M.</h3>
@@ -689,7 +738,7 @@
                         <div class="card variant-outlined group">
                             <div class="flex gap-3">
                                 <span class="relative avatar block text-lg sz-md">
-                                    <img class="h-full w-full object-cover" alt="Gerald Z." src="https://api.dicebear.com/7.x/avataaars/svg?seed=gerald&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full object-cover" alt="Gerald Z." src="https://api.dicebear.com/7.x/avataaars/svg?seed=gerald&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728&facialHair=beardMajestic,beardMedium,moustacheMagnum" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Gerald Z.</h3>
@@ -697,6 +746,24 @@
                                     <blockquote class="mt-3">
                                         <p class="text-gray-700 dark:text-gray-300">
                                             The platform development was handled with great attention to detail. Highly recommend their services for any web project.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Remy Bryan - The Snack Shack -->
+                        <div class="card variant-outlined group">
+                            <div class="flex gap-3">
+                                <span class="relative avatar block text-lg sz-md">
+                                    <img class="h-full w-full object-cover" alt="Remy Bryan" src="https://api.dicebear.com/7.x/avataaars/svg?seed=remy&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728&facialHair=beardMajestic,beardMedium,moustacheMagnum" loading="lazy" width="120" height="120">
+                                </span>
+                                <div class="w-[calc(100%-3.25rem)]">
+                                    <h3 class="font-medium text-gray-950 dark:text-white">Remy B.</h3>
+                                    <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">The Snack Shack</span>
+                                    <blockquote class="mt-3">
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            I was impressed by his professionalism, technical expertise, and attention to detail. He delivered high-quality product for my business. I would highly recommend Him for any web development project.
                                         </p>
                                     </blockquote>
                                 </div>
@@ -750,7 +817,7 @@
 
     <!-- Footer Component -->
     <footer>
-            <div class="border-t bg-white/50 dark:bg-gray-950/50 backdrop-blur-2xl">
+            <div class="border-t bg-white/50 dark:bg-dark-charcoal/50 backdrop-blur-2xl">
                 <div class="px-6 m-auto max-w-6xl">
                     <div class="py-6 text-center">
                         <p class="text-sm text-gray-600 dark:text-gray-400">
