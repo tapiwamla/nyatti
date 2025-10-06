@@ -7,6 +7,11 @@
     { "source": "/optimize", "destination": "/optimize.html" }
   ],
   "redirects": [
+    { "source": "/software.html", "destination": "/software", "permanent": true },
+    { "source": "/ecommerce.html", "destination": "/ecommerce", "permanent": true },
+    { "source": "/websites.html", "destination": "/websites", "permanent": true },
+    { "source": "/seo.html", "destination": "/seo", "permanent": true },
+    { "source": "/optimize.html", "destination": "/optimize", "permanent": true },
     {
       "source": "/masterclass",
       "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeArtV6m2BQZ49s_WgJLvz2tcAuaRh90bqymQHMj47jrGHARw/viewform?usp=header",
