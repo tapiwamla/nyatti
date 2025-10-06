@@ -1,4 +1,11 @@
 {
+  "rewrites": [
+    { "source": "/software", "destination": "/software.html" },
+    { "source": "/ecommerce", "destination": "/ecommerce.html" },
+    { "source": "/websites", "destination": "/websites.html" },
+    { "source": "/seo", "destination": "/seo.html" },
+    { "source": "/optimize", "destination": "/optimize.html" }
+  ],
   "redirects": [
     {
       "source": "/masterclass",
@@ -10,6 +17,5 @@
       "destination": "https://meet.google.com/cyz-xstw-nan",
       "permanent": false
     }
-  ],
-  "cleanUrls": true
+  ]
 }
