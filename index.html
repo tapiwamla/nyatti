@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nyatti.com - Ecommerce | Web Apps | Websites</title>
         <meta name="description" content="Professional web development services - ecommerce, web apps, and business websites" />
+        <link rel="canonical" href="https://nyatti.com/" />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
 
         <!-- Facebook Meta Tags -->
@@ -12,7 +13,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Nyatti.com - Professional Web Development" />
         <meta property="og:description" content="Professional web development services - ecommerce, web apps, and business websites" />
-        <meta property="og:image" content="/images/og-cover.png" />
+        <meta property="og:image" content="https://nyatti.com/images/og-cover.png" />
 
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image" />
@@ -20,66 +21,747 @@
         <meta property="twitter:url" content="https://nyatti.com/" />
         <meta name="twitter:title" content="Nyatti.com - Professional Web Development" />
         <meta name="twitter:description" content="Professional web development services - ecommerce, web apps, and business websites" />
-        <meta name="twitter:image" content="/images/og-cover.png" />
+        <meta name="twitter:image" content="https://nyatti.com/images/og-cover.png" />
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Nyatti",
+            "url": "https://nyatti.com",
+            "logo": "https://nyatti.com/images/favicon.png",
+            "description": "Professional web development services - ecommerce, web apps, and business websites",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "US"
+            },
+            "sameAs": [],
+            "service": [
+                {
+                    "@type": "Service",
+                    "serviceType": "Ecommerce Development",
+                    "description": "Custom ecommerce solutions for online businesses"
+                },
+                {
+                    "@type": "Service",
+                    "serviceType": "Web Application Development",
+                    "description": "Custom web applications tailored to your business needs"
+                },
+                {
+                    "@type": "Service",
+                    "serviceType": "Website Development",
+                    "description": "Professional business websites and online presence"
+                }
+            ]
+        }
+        </script>
     </head>
     
     <body class="bg-white dark:bg-gray-950">
-    <!-- Header Component - include content from components/Header.html -->
-    <div id="header-component"></div>
-    
-    <!-- Hero Component - include content from components/Hero.html -->
-    <div id="hero-component"></div>
-    
-    <!-- Services Component - include content from components/Services.html -->
-    <div id="services-component"></div>
+    <!-- Header Component -->
+    <header id="header" class="group">
+    <nav class="fixed overflow-hidden z-20 w-full border-b bg-white/50 dark:bg-gray-950/50 backdrop-blur-2xl">
+        <div class="px-6 m-auto max-w-6xl ">
+            <div class="flex flex-wrap items-center justify-between py-2 sm:py-4">
+                <div class="w-full items-center flex justify-between lg:w-auto">
+                    <a href="/" aria-label="nyatti logo">
+                        <img class="h-7" src="/images/nyatti.svg" alt="Nyatti Logo" />
+                    </a>
+                    <div class="flex lg:hidden">
+                        <button id="menu-btn" aria-label="open menu" data-toggle="mobile-menu" class="btn variant-ghost sz-md icon-only relative z-20 -mr-2.5 block cursor-pointer lg:hidden">
+                            <svg class="text-title m-auto size-6 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-180 group-data-[state=active]:scale-0 group-data-[state=active]:opacity-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+                            </svg>
+                            <svg class="text-title absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="mobile-menu" class="w-full group-data-[state=active]:h-fit h-0 lg:w-fit flex-wrap justify-end items-center space-y-8 lg:space-y-0 lg:flex lg:h-fit md:flex-nowrap overflow-hidden lg:block">
+                    <div class="mt-6 dark:text-body md:-ml-4 lg:pr-4 lg:mt-0">
+                        <ul class="space-y-6 tracking-wide text-base lg:text-sm lg:flex lg:space-y-0">
+                            <li>
+                                <a href="/software" class="hover:link md:px-4 block">
+                                    <span>Software</span>
+                                </a>
+                            </li>
 
-    <!-- Intro Component - include content from components/Intro.html -->
-    <div id="intro-component"></div>
+                            <li>
+                                <a href="/ecommerce" class="hover:link md:px-4 block">
+                                    <span>Ecommerce</span>
+                                </a>
+                            </li>
 
-    <!-- WhyUs Component - include content from components/WhyUs.html -->
-    <div id="whyus-component"></div>
+                            <li>
+                                <a href="/websites" class="hover:link md:px-4 block">
+                                    <span>Websites</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-    <!-- Portfolio Component - include content from components/Portfolio.html -->
-    <div id="portfolio-component"></div>
+                    <div class="w-full space-y-2 gap-2 pt-6 pb-4 lg:pb-0 border-t items-start lg:items-center flex flex-col lg:flex-row lg:space-y-0 lg:w-fit lg:border-l lg:border-t-0 lg:pt-0 lg:pl-2">
+                        <a href="https://wa.me/254797951250?text=Hi%20Nyatti,%20I'm%20interested%20in%20your%20web%20development%20services" target="_blank" class="btn variant-primary sz-sm">
+                            <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.485 3.488"/>
+                            </svg>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <!-- Testimonials Component - include content from components/Testimonials.html -->
-    <div id="testimonials-component"></div>
+    <!-- Hero Component -->
+    <section class="relative">
+    <div class="relative pt-24 lg:pt-28">
+        <div class="mx-auto px-6 max-w-7xl md:px-12">
+            <div class="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5">
 
-    <!-- Contact Component - include content from components/Contact.html -->
-    <div id="contact-component"></div>
-    
-    <!-- Footer Component - include content from components/Footer.html -->
-    <div id="footer-component"></div>
-    
+                <a href="https://www.nyatti.com/masterclass" target="_blank" class="annonce variant-outlined gap-2 sz-sm w-fit mx-auto group">
+                    <span class="annonce-concern sz-xs variant-neutral">New</span>
+                    <span class="text-title text-nowrap text-sm line-clamp-1">
+                        Join WordPress Masterclass
+                    </span>
+                    <div class="ml-4 scale-75 flex items-center -space-x-3 group-hover:-translate-x-1 transition-transform duration-300">
+                        <span class="w-2.5 translate-y-[-0.3px] -translate-x-px opacity-0 h-[1.5px] rounded bg-gray-950 dark:bg-white origin-left scale-x-0 transition duration-300 group-hover:opacity-100 group-hover:scale-x-100"></span>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="size-4 text-gray-950 dark:text-white -translate-x-2 transition duration-300 group-hover:translate-x-px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </div>
+                </a>
+                <h1 class="mt-8 text-wrap text-4xl md:text-5xl font-semibold text-title xl:text-5xl xl:[line-height:1.125]">Build Something <span class="relative inline-block">Useful<svg class="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 100 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 8c20-4 40 2 60-1s30-5 36-3" stroke="#2563eb" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/></svg></span> <br class="hidden sm:block"> for Your Business</h1>
+                <p class="text-wrap mx-auto mt-8 max-w-2xl text-lg text-body">Turning ideas into powerful web applications, converting ecommerce shops, and professional business websites.</p>
+                <div class="mt-8 flex flex-col items-center justify-center gap-4">
+                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                        <div class="flex items-center gap-4">
+                            <span class="text-lg font-medium">Follow Us</span>
+                            <div class="w-px h-6 bg-gray-200 dark:bg-gray-600 hidden sm:block"></div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://tiktok.com/@tapiwamla" target="_blank" aria-label="TikTok" class="size-10 flex items-center justify-center rounded-full bg-primary-600 hover:bg-primary-700 text-white transition-colors">
+                                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com/tapiwamla" target="_blank" aria-label="Instagram" class="size-10 flex items-center justify-center rounded-full bg-primary-600 hover:bg-primary-700 text-white transition-colors">
+                                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://youtube.com/@tapiwamla" target="_blank" aria-label="YouTube" class="size-10 flex items-center justify-center rounded-full bg-primary-600 hover:bg-primary-700 text-white transition-colors">
+                                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/tapiwamla" target="_blank" aria-label="LinkedIn" class="size-10 flex items-center justify-center rounded-full bg-primary-600 hover:bg-primary-700 text-white transition-colors">
+                                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="hidden btn variant-ghost sz-lg">
+                        <span class="text-sm">Learn more</span>
+                        <svg class="-mr-1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m19 12l12 12l-12 12"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="-mx-6 relative mt-8 sm:mt-12 max-w-xl sm:mx-auto">
+                <div class="absolute inset-0 -top-8 left-1/2 -z-20 h-56 w-full -translate-x-1/2 dark:opacity-10 [background-image:linear-gradient(to_bottom,transparent_98%,theme(colors.gray.200/75%)_98%),linear-gradient(to_right,transparent_94%,_theme(colors.gray.200/75%)_94%)] [background-size:16px_35px] [mask:radial-gradient(black,transparent_95%)]"></div>
+                <div class="absolute top-12 inset-x-0 w-2/3 h-1/3 -z-[1] rounded-full bg-primary-300 dark:bg-white/20 mx-auto blur-3xl"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Services Component -->
+    <section>
+    <div class="pt-36">
+        <div class="mx-auto px-6 max-w-6xl">
+            <div class="relative">
+                <div class="relative z-10 grid gap-3 grid-cols-3">
+                    <div class="card variant-outlined col-span-full lg:col-span-1 overflow-hidden relative">
+                        <div class="p-6">
+                            <div class="relative aspect-video w-full mb-4 overflow-hidden rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Applications" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            <div class="text-center relative z-10 space-y-4">
+                                <h2 class="text-xl font-semibold text-title">Web Applications</h2>
+                                <p class="text-body">Custom web applications built with modern technologies to solve complex business problems and streamline operations.</p>
+                                <a href="/software" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="7" height="7" x="3" y="3" rx="1"/>
+                                        <rect width="7" height="7" x="14" y="3" rx="1"/>
+                                        <rect width="7" height="7" x="14" y="14" rx="1"/>
+                                        <rect width="7" height="7" x="3" y="14" rx="1"/>
+                                    </svg>
+                                    Browse Apps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card variant-outlined col-span-full lg:col-span-1 overflow-hidden relative">
+                        <div class="p-6">
+                            <div class="relative aspect-video w-full mb-4 overflow-hidden rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1635405074683-96d6921a2a68?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ecommerce Shops" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            <div class="text-center relative z-10 space-y-4">
+                                <h2 class="text-xl font-semibold text-title">Ecommerce Shops</h2>
+                                <p class="text-body">Complete online stores with secure payment processing, inventory management, and customer-friendly shopping experiences.</p>
+                                <a href="/ecommerce" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    See Portfolio
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card variant-outlined col-span-full lg:col-span-1 overflow-hidden relative">
+                        <div class="p-6">
+                            <div class="relative aspect-video w-full mb-4 overflow-hidden rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Professional Websites" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            <div class="text-center relative z-10 space-y-4">
+                                <h2 class="text-xl font-semibold text-title">Professional Websites</h2>
+                                <p class="text-body">Beautiful, responsive websites that represent your brand professionally and drive business growth.</p>
+                                <a href="/websites" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    See Portfolio
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Intro Component -->
+    <section>
+    <div class="pt-36">
+        <div class="mx-auto px-6 max-w-6xl">
+            <div class="text-center">
+                <h2 class="text-3xl text-gray-950 dark:text-white font-semibold max-w-md mx-auto">You'll never go wrong with a <span class="relative inline-block">results-driven<svg class="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 100 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 8c20-4 40 2 60-1s30-5 36-3" stroke="#2563eb" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/></svg></span> team</h2>
+                <p class="mt-6 max-w-lg mx-auto text-gray-700 dark:text-gray-300">Technology must solve specific problems and contribute meaningfully to business profitability. We're here to drive it.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- WhyUs Component -->
+    <section>
+            <div class="pt-36">
+                <div class="mx-auto px-6 max-w-6xl">
+                    <div class="grid gap-12 md:gap-0 md:grid-cols-2 items-center lg:gap-12">
+                        <div class="relative overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Developer working on web development project" class="w-full h-full object-cover rounded-lg">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-lg"></div>
+                        </div>
+                        <div class="lg:pl-24">
+                            <div class="md:pl-6 lg:pl-0">
+                            </div>
+                            <ul class="mt-8 divide-y border-y *:py-3 *:flex *:items-center *:gap-3">
+                                <li>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 1 1-18 0a9 9 0 0 1 18 0Z"/>
+                                    </svg>
+                                    5+ years of proven expertise
+                                </li>
+                                <li>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                    100% custom-built solutions
+                                </li>
+                                <li>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 12l2 2l4-4"/>
+                                    </svg>
+                                    Ongoing support & maintenance
+                                </li>
+                                <li >
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8m-8-4h8m-8 8h8M5 20h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
+                                    </svg>
+                                    Transparent communication always
+                                </li>
+                                <li>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                    Competitive pricing with no hidden fees
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Portfolio Component -->
+    <section>
+            <div class="pt-36">
+                <div class="mx-auto px-6 max-w-6xl">
+                    <div class="text-center">
+                        <h2 class="text-3xl max-w-2xl mx-auto text-title font-semibold">Word doesn't mean anything unless it's backed by <span class="relative inline-block">facts<svg class="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 100 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 8c20-4 40 2 60-1s30-5 36-3" stroke="#2563eb" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/></svg></span></h2>
+                        <p class="mt-6 max-w-lg mx-auto text-body">Browse through some of the works we've had the honor to work on</p>
+                    </div>
+
+                    <!-- Apps Section -->
+                    <div id="software" class="mt-16">
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                            <!-- Tushop -->
+                            <div class="relative group overflow-hidden card variant-outlined">
+                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                                    <img src="/images/tushop.png" alt="Tushop POS System Interface" class="w-full h-full object-cover rounded-t-lg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                        <div class="mb-3">
+                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-blue-600 rounded-full dark:bg-blue-700 dark:text-white">App</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-title mb-3">Tushop</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">POS & Grocery Shop management system built for efficient retail operations and inventory management.</p>
+                                    </div>
+                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+                                        <button class="btn variant-soft sz-sm opacity-60 cursor-not-allowed" disabled>
+                                            <span>Launching soon</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pocket -->
+                            <div class="relative group overflow-hidden card variant-outlined">
+                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pocket Business Management Dashboard" class="w-full h-full object-cover rounded-t-lg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                        <div class="mb-3">
+                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-blue-600 rounded-full dark:bg-blue-700 dark:text-white">App</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-title mb-3">Pocket</h3>
+                                        <p class="text-body">Business management software built with Next.js and Supabase for comprehensive business operations.</p>
+                                    </div>
+
+                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+                                        <button class="btn variant-soft sz-sm opacity-60 cursor-not-allowed" disabled>
+                                            <span>Launching soon</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ApplyOnline -->
+                            <div class="relative group overflow-hidden card variant-outlined">
+                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                                    <img src="/images/applyonline.png" alt="ApplyOnline Opportunity Portal" class="w-full h-full object-cover rounded-t-lg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                        <div class="mb-3">
+                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-yellow-600 rounded-full dark:bg-yellow-700 dark:text-white">Website</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-title mb-3">ApplyOnline</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">Scholarship, jobs, and fellowships opportunity portal for young Zimbabweans.</p>
+                                    </div>
+                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+                                        <a href="https://applyonline.co.zw" target="_blank" class="group btn variant-soft sz-sm">
+                                            <span>Visit live website</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7v6m0-6h-6"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Websites Section -->
+                    <div id="websites" class="mt-16">
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                            <!-- Winmer Enterprises -->
+                            <div class="relative group overflow-hidden card variant-outlined">
+                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                                    <img src="/images/winmer.png" alt="Winmer Enterprises Accounting Firm" class="w-full h-full object-cover rounded-t-lg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                        <div class="mb-3">
+                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-yellow-600 rounded-full dark:bg-yellow-700 dark:text-white">Website</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-title mb-3">Winmer Enterprises</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">Professional accounting firm website built with WordPress for client services and consultation.</p>
+                                    </div>
+                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+                                        <a href="https://winmerenterprises.co.ke" target="_blank" class="group btn variant-soft sz-sm">
+                                            <span>Visit live website</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7v6m0-6h-6"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mercy Mwaura -->
+                            <div class="relative group overflow-hidden card variant-outlined">
+                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                                    <img src="/images/mercy.png" alt="Mercy Mwaura Accounting Services" class="w-full h-full object-cover rounded-t-lg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                        <div class="mb-3">
+                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-yellow-600 rounded-full dark:bg-yellow-700 dark:text-white">Website</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-title mb-3">Mercy Mwaura</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">Solo accountant professional website built with WordPress for personal accounting services.</p>
+                                    </div>
+                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+                                        <a href="https://mercymwaura.com" target="_blank" class="group btn variant-soft sz-sm">
+                                            <span>Visit live website</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7v6m0-6h-6"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Upendo Family -->
+                            <div class="relative group overflow-hidden card variant-outlined">
+                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                                    <img src="/images/upendo.png" alt="Upendo Family Children's Home" class="w-full h-full object-cover rounded-t-lg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                        <div class="mb-3">
+                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-yellow-600 rounded-full dark:bg-yellow-700 dark:text-white">Website</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-title mb-3">Upendo Family</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">Children's home website built with WordPress for community support and donations.</p>
+                                    </div>
+                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+                                        <a href="https://upendofamily.org" target="_blank" class="group btn variant-soft sz-sm">
+                                            <span>Visit live website</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7v6m0-6h-6"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Ecommerce Section -->
+                    <div id="ecommerce" class="mt-16">
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                            <!-- RoyalTek -->
+                            <div class="relative group overflow-hidden card variant-outlined">
+                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                                    <img src="/images/royaltek.png" alt="RoyalTek Electronics Store" class="w-full h-full object-cover rounded-t-lg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                        <div class="mb-3">
+                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-green-600 rounded-full dark:bg-green-700 dark:text-white">Ecommerce</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-title mb-3">RoyalTek</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">Ecommerce website built with headless WooCommerce for online retail and product sales.</p>
+                                    </div>
+                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+                                        <a href="https://royaltek.nyatti.com" target="_blank" class="group btn variant-soft sz-sm">
+                                            <span>Visit live website</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7v6m0-6h-6"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Proxima China -->
+                            <div class="relative group overflow-hidden card variant-outlined">
+                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                                    <img src="https://images.unsplash.com/photo-1664455340023-214c33a9d0bd?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Proxima China International Commerce" class="w-full h-full object-cover rounded-t-lg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                        <div class="mb-3">
+                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-green-600 rounded-full dark:bg-green-700 dark:text-white">Ecommerce</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-title mb-3">Proxima China</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">International ecommerce website for online shopping and global product distribution.</p>
+                                    </div>
+                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+                                        <a href="https://proximachina.com" target="_blank" class="group btn variant-soft sz-sm">
+                                            <span>Visit live website</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7v6m0-6h-6"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Thespa -->
+                            <div class="relative group overflow-hidden card variant-outlined">
+                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                                    <img src="/images/thespa.png" alt="Thespa Booking Platform" class="w-full h-full object-cover rounded-t-lg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                        <div class="mb-3">
+                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-purple-600 rounded-full dark:bg-purple-700 dark:text-white">Landing Page</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-title mb-3">Thespa</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">Landing page that supports booking for spas, barbers, and beauty services with instant notifications.</p>
+                                    </div>
+                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+                                        <a href="https://legends.nyatti.com" target="_blank" class="group btn variant-soft sz-sm">
+                                            <span>Visit live website</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7v6m0-6h-6"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Testimonials Component -->
+    <section>
+            <div class="py-36">
+                <div class="mx-auto px-6 max-w-6xl">
+                    <div class="text-center">
+                        <h2 class="text-3xl max-w-2xl mx-auto text-title font-semibold">They can't be all wrong</h2>
+                        <p class="mt-6 max-w-lg mx-auto text-body">They all had something positive to say afterwards. Maybe you can join them.</p>
+                    </div>
+                    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Samuel Wanjahi - CEO, Winmer Enterprises -->
+                        <div class="card variant-outlined group">
+                            <div class="flex gap-3">
+                                <span class="relative avatar block text-lg sz-md">
+                                    <img class="h-full w-full object-cover" alt="Samuel Wanjahi" src="https://api.dicebear.com/7.x/avataaars/svg?seed=samuel&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                </span>
+                                <div class="w-[calc(100%-3.25rem)]">
+                                    <h3 class="font-medium text-title">Samuel W.</h3>
+                                    <span class="block text-sm tracking-wide text-caption">CEO, Winmer Enterprises</span>
+                                    <blockquote class="mt-3">
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            Working with this team has been exceptional. Their professionalism and technical expertise delivered exactly what we needed for our accounting firm.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mercy Mwaura - Accountant -->
+                        <div class="card variant-outlined group">
+                            <div class="flex gap-3">
+                                <span class="relative avatar block text-lg sz-md">
+                                    <img class="h-full w-full object-cover" alt="Mercy Mwaura" src="https://api.dicebear.com/7.x/avataaars/svg?seed=mercy&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                </span>
+                                <div class="w-[calc(100%-3.25rem)]">
+                                    <h3 class="font-medium text-gray-950 dark:text-white">Mercy M.</h3>
+                                    <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">Accountant</span>
+                                    <blockquote class="mt-3">
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            The website perfectly represents my accounting services. The design is clean, professional, and easy for my clients to navigate.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tafadzwa Bere - Royaltek Electronics -->
+                        <div class="card variant-outlined group">
+                            <div class="flex gap-3">
+                                <span class="relative avatar block text-lg sz-md">
+                                    <img class="h-full w-full object-cover" alt="Tafadzwa Bere" src="https://api.dicebear.com/7.x/avataaars/svg?seed=tafadzwa&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                </span>
+                                <div class="w-[calc(100%-3.25rem)]">
+                                    <h3 class="font-medium text-gray-950 dark:text-white">Tafadzwa B.</h3>
+                                    <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">Royaltek Electronics</span>
+                                    <blockquote class="mt-3">
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            Our ecommerce platform exceeded expectations. The integration is seamless and our sales have significantly improved since launch.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Doreen Shiku - Proxima Smart Sourcing -->
+                        <div class="card variant-outlined group">
+                            <div class="flex gap-3">
+                                <span class="relative avatar block text-lg sz-md">
+                                    <img class="h-full w-full object-cover" alt="Doreen Shiku" src="https://api.dicebear.com/7.x/avataaars/svg?seed=doreen&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                </span>
+                                <div class="w-[calc(100%-3.25rem)]">
+                                    <h3 class="font-medium text-gray-950 dark:text-white">Doreen S.</h3>
+                                    <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">Proxima Smart Sourcing</span>
+                                    <blockquote class="mt-3">
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            The international ecommerce solution perfectly handles our global distribution needs. Outstanding technical implementation and ongoing support.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- John Guda - Upendo Christian Center -->
+                        <div class="card variant-outlined group">
+                            <div class="flex gap-3">
+                                <span class="relative avatar block text-lg sz-md">
+                                    <img class="h-full w-full object-cover" alt="John Guda" src="https://api.dicebear.com/7.x/avataaars/svg?seed=john&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                </span>
+                                <div class="w-[calc(100%-3.25rem)]">
+                                    <h3 class="font-medium text-gray-950 dark:text-white">John G.</h3>
+                                    <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">Upendo Christian Center</span>
+                                    <blockquote class="mt-3">
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            Our children's home website beautifully showcases our mission. It's helped us connect with more supporters and donors than ever before.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Simba Mutandadzi - Simnasty Trust -->
+                        <div class="card variant-outlined group">
+                            <div class="flex gap-3">
+                                <span class="relative avatar block text-lg sz-md">
+                                    <img class="h-full w-full object-cover" alt="Simba Mutandadzi" src="https://api.dicebear.com/7.x/avataaars/svg?seed=simba&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                </span>
+                                <div class="w-[calc(100%-3.25rem)]">
+                                    <h3 class="font-medium text-gray-950 dark:text-white">Simba M.</h3>
+                                    <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">Simnasty Trust</span>
+                                    <blockquote class="mt-3">
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            Professional service delivery from start to finish. The team understood our requirements and delivered beyond expectations.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exode M. - AHAV RDC -->
+                        <div class="card variant-outlined group">
+                            <div class="flex gap-3">
+                                <span class="relative avatar block text-lg sz-md">
+                                    <img class="h-full w-full object-cover" alt="Exode M." src="https://api.dicebear.com/7.x/avataaars/svg?seed=exode&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                </span>
+                                <div class="w-[calc(100%-3.25rem)]">
+                                    <h3 class="font-medium text-gray-950 dark:text-white">Exode M.</h3>
+                                    <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">AHAV RDC</span>
+                                    <blockquote class="mt-3">
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            Excellent collaboration and technical expertise. The solution perfectly meets our organizational needs and objectives.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gerald Z. - ApplyOnline Zimbabwe -->
+                        <div class="card variant-outlined group">
+                            <div class="flex gap-3">
+                                <span class="relative avatar block text-lg sz-md">
+                                    <img class="h-full w-full object-cover" alt="Gerald Z." src="https://api.dicebear.com/7.x/avataaars/svg?seed=gerald&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=ae5d29,614335,a55728" loading="lazy" width="120" height="120">
+                                </span>
+                                <div class="w-[calc(100%-3.25rem)]">
+                                    <h3 class="font-medium text-gray-950 dark:text-white">Gerald Z.</h3>
+                                    <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">ApplyOnline Zimbabwe</span>
+                                    <blockquote class="mt-3">
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            The platform development was handled with great attention to detail. Highly recommend their services for any web project.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Contact Component -->
+    <section>
+            <div class="pb-36">
+                <div class="mx-auto px-6 max-w-6xl">
+                    <div class="text-center">
+                        <h2 class="text-3xl text-title font-semibold">Get in touch with us</h2>
+                        <p class="mt-6 max-w-2xl mx-auto text-body">Nyatti.com is a global fullstack web development company. We solve specific business problems through sophisticated web applications, converting e-commerce solutions, and professional, quality websites at competitive prices.</p>
+                    </div>
+                    <div class="mt-12 max-w-2xl mx-auto text-center">
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2">
+                                <svg class="size-5 text-primary-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.891 3.426"/>
+                                </svg>
+                                <span class="text-body">+254797951250</span>
+                            </div>
+
+                            <div class="hidden sm:block w-px h-6 bg-gray-300 dark:bg-gray-600"></div>
+
+                            <div class="flex items-center gap-2">
+                                <svg class="size-5 text-primary-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                                <span class="text-body">hello@nyatti.com</span>
+                            </div>
+
+                            <div class="hidden sm:block w-px h-6 bg-gray-300 dark:bg-gray-600"></div>
+
+                            <div class="flex items-center gap-2">
+                                <svg class="size-5 text-primary-600" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <span class="text-body">Nairobi, Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer Component -->
+    <footer>
+            <div class="border-t bg-white/50 dark:bg-gray-950/50 backdrop-blur-2xl">
+                <div class="px-6 m-auto max-w-6xl">
+                    <div class="py-6 text-center">
+                        <p class="text-sm text-gray-600 dark:text-gray-400">
+                            Copyright © 2024 - 2034 Nyatti.com. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     <script type="module" src="./main.js"></script>
-    <script>
-        // Function to load component content
-        async function loadComponent(componentId, filePath) {
-            try {
-                const response = await fetch(filePath);
-                const content = await response.text();
-                document.getElementById(componentId).innerHTML = content;
-            } catch (error) {
-                console.error(`Error loading component ${componentId}:`, error);
-            }
-        }
-
-        // Load all components when DOM is loaded
-        document.addEventListener('DOMContentLoaded', async function() {
-            await Promise.all([
-                loadComponent('header-component', 'components/Header.html'),
-                loadComponent('hero-component', 'components/Hero.html'),
-                loadComponent('services-component', 'components/Services.html'),
-                loadComponent('intro-component', 'components/Intro.html'),
-                loadComponent('whyus-component', 'components/WhyUs.html'),
-                loadComponent('portfolio-component', 'components/Portfolio.html'),
-                loadComponent('testimonials-component', 'components/Testimonials.html'),
-                loadComponent('contact-component', 'components/Contact.html'),
-                loadComponent('footer-component', 'components/Footer.html')
-            ]);
-            
-        });
-    </script>
     <script type="module">
         import Swiper from 'swiper/bundle';
         import { Pagination } from 'swiper/modules';
