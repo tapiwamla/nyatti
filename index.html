@@ -198,70 +198,69 @@
     <div class="pt-36">
         <div class="mx-auto px-6 max-w-6xl">
             <div class="relative">
+                <!-- First Row: Apps, Websites, Ecommerce -->
+                <div class="relative z-10 grid gap-3 grid-cols-1 md:grid-cols-3 mb-3">
+                    <div class="card variant-outlined overflow-hidden relative flex flex-col">
+                        <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                            <img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Applications" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h2 class="text-xl font-semibold text-title mb-3">Web Applications</h2>
+                            <p class="text-body mb-4 flex-1">Custom web applications built with modern technologies to solve complex business problems and streamline operations.</p>
+                            <a href="/software" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="7" height="7" x="3" y="3" rx="1"/>
+                                    <rect width="7" height="7" x="14" y="3" rx="1"/>
+                                    <rect width="7" height="7" x="14" y="14" rx="1"/>
+                                    <rect width="7" height="7" x="3" y="14" rx="1"/>
+                                </svg>
+                                Browse Apps
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card variant-outlined overflow-hidden relative flex flex-col">
+                        <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Professional Websites" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h2 class="text-xl font-semibold text-title mb-3">Professional Websites</h2>
+                            <p class="text-body mb-4 flex-1">Beautiful, responsive websites that represent your brand professionally and drive business growth.</p>
+                            <a href="/websites" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                                See Portfolio
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card variant-outlined overflow-hidden relative flex flex-col">
+                        <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
+                            <img src="https://images.unsplash.com/photo-1635405074683-96d6921a2a68?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ecommerce Shops" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h2 class="text-xl font-semibold text-title mb-3">Ecommerce Shops</h2>
+                            <p class="text-body mb-4 flex-1">Complete online stores with secure payment processing, inventory management, and customer-friendly shopping experiences.</p>
+                            <a href="/ecommerce" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                                See Portfolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row: SEO and Optimize -->
                 <div class="relative z-10 grid gap-3 grid-cols-1 md:grid-cols-2">
                     <div class="card variant-outlined overflow-hidden relative">
                         <div class="flex flex-col sm:flex-row gap-6 p-6">
                             <div class="relative w-full sm:w-1/3 aspect-video sm:aspect-square overflow-hidden rounded-lg flex-shrink-0">
-                                <img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Applications" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                            </div>
-                            <div class="flex flex-col justify-center space-y-4 flex-1">
-                                <h2 class="text-xl font-semibold text-title">Web Applications</h2>
-                                <p class="text-body">Custom web applications built with modern technologies to solve complex business problems and streamline operations.</p>
-                                <a href="/software" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <rect width="7" height="7" x="3" y="3" rx="1"/>
-                                        <rect width="7" height="7" x="14" y="3" rx="1"/>
-                                        <rect width="7" height="7" x="14" y="14" rx="1"/>
-                                        <rect width="7" height="7" x="3" y="14" rx="1"/>
-                                    </svg>
-                                    Browse Apps
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card variant-outlined overflow-hidden relative">
-                        <div class="flex flex-col sm:flex-row gap-6 p-6">
-                            <div class="relative w-full sm:w-1/3 aspect-video sm:aspect-square overflow-hidden rounded-lg flex-shrink-0">
-                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Professional Websites" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                            </div>
-                            <div class="flex flex-col justify-center space-y-4 flex-1">
-                                <h2 class="text-xl font-semibold text-title">Professional Websites</h2>
-                                <p class="text-body">Beautiful, responsive websites that represent your brand professionally and drive business growth.</p>
-                                <a href="/websites" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
-                                        <circle cx="12" cy="12" r="3"/>
-                                    </svg>
-                                    See Portfolio
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card variant-outlined overflow-hidden relative">
-                        <div class="flex flex-col sm:flex-row gap-6 p-6">
-                            <div class="relative w-full sm:w-1/3 aspect-video sm:aspect-square overflow-hidden rounded-lg flex-shrink-0">
-                                <img src="https://images.unsplash.com/photo-1635405074683-96d6921a2a68?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ecommerce Shops" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                            </div>
-                            <div class="flex flex-col justify-center space-y-4 flex-1">
-                                <h2 class="text-xl font-semibold text-title">Ecommerce Shops</h2>
-                                <p class="text-body">Complete online stores with secure payment processing, inventory management, and customer-friendly shopping experiences.</p>
-                                <a href="/ecommerce" class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-fit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
-                                        <circle cx="12" cy="12" r="3"/>
-                                    </svg>
-                                    See Portfolio
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card variant-outlined overflow-hidden relative">
-                        <div class="flex flex-col sm:flex-row gap-6 p-6">
-                            <div class="relative w-full sm:w-1/3 aspect-video sm:aspect-square overflow-hidden rounded-lg flex-shrink-0">
-                                <img src="https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Search Engine Optimization" class="w-full h-full object-cover">
+                                <img src="/images/seo.jpg" alt="Search Engine Optimization" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
                             <div class="flex flex-col justify-center space-y-4 flex-1">
@@ -523,75 +522,7 @@
 
                     <!-- Apps Section -->
                     <div id="software" class="mt-16">
-                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                            <!-- Tushop -->
-                            <div class="relative group overflow-hidden card variant-outlined">
-                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
-                                    <img src="/images/tushop.png" alt="Tushop POS System Interface" class="w-full h-full object-cover rounded-t-lg">
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                                </div>
-                                <div class="relative">
-                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                        <div class="mb-3">
-                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-blue-600 rounded-full dark:bg-blue-700 dark:text-white">App</span>
-                                        </div>
-                                        <h3 class="text-lg font-semibold text-title mb-3">Tushop</h3>
-                                        <p class="text-gray-700 dark:text-gray-300">POS & Grocery Shop management system built for efficient retail operations and inventory management.</p>
-                                    </div>
-                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
-                                        <a href="https://tushop.nyatti.com" target="_blank" class="group btn variant-soft sz-sm">
-                                            <span>Visit live website</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7v6m0-6h-6"/></svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pocket -->
-                            <div class="relative group overflow-hidden card variant-outlined">
-                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
-                                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pocket Business Management Dashboard" class="w-full h-full object-cover rounded-t-lg">
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                                </div>
-                                <div class="relative">
-                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                        <div class="mb-3">
-                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-blue-600 rounded-full dark:bg-blue-700 dark:text-white">App</span>
-                                        </div>
-                                        <h3 class="text-lg font-semibold text-title mb-3">Pocket</h3>
-                                        <p class="text-body">Business management software built with Next.js and Supabase for comprehensive business operations.</p>
-                                    </div>
-                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
-                                        <button class="btn variant-soft sz-sm opacity-60 cursor-not-allowed" disabled>
-                                            <span>Launching soon</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- BTools -->
-                            <div class="relative group overflow-hidden card variant-outlined">
-                                <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
-                                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="BTools Business Tools Collection" class="w-full h-full object-cover rounded-t-lg">
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                                </div>
-                                <div class="relative">
-                                    <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                        <div class="mb-3">
-                                            <span class="inline-block px-2 py-1 text-xs font-medium text-white bg-blue-600 rounded-full dark:bg-blue-700 dark:text-white">Apps</span>
-                                        </div>
-                                        <h3 class="text-lg font-semibold text-title mb-3">BTools</h3>
-                                        <p class="text-gray-700 dark:text-gray-300">Create an invoice, generate a quote, print a receipt — essential tools to run your business in one place!</p>
-                                    </div>
-                                    <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
-                                        <button class="btn variant-soft sz-sm opacity-60 cursor-not-allowed" disabled>
-                                            <span>Launching soon</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                        <div id="apps-homepage-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
                     </div>
                 </div>
             </div>
@@ -905,6 +836,11 @@
         </footer>
 
     <script type="module" src="./main.js"></script>
+    <script src="/js/projectsRenderer.js"></script>
+    <script>
+        const renderer = new ProjectsRenderer();
+        renderer.render('apps-homepage-container', { category: 'app', featured: true });
+    </script>
     <script type="module">
         import Swiper from 'swiper/bundle';
         import { Pagination } from 'swiper/modules';

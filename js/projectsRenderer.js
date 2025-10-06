@@ -60,20 +60,20 @@ class ProjectsRenderer {
          </a>`;
 
     return `
-      <div class="relative group overflow-hidden card variant-outlined">
+      <div class="relative group overflow-hidden card variant-outlined flex flex-col">
         <div class="relative aspect-video overflow-hidden rounded-t-[--card-border-radius]">
           <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover rounded-t-lg">
           <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
         </div>
-        <div class="relative">
-          <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+        <div class="relative flex flex-col flex-1">
+          <div class="mt-6 pb-6 rounded-b-[--card-border-radius] flex-1">
             <div class="mb-3">
               <span class="inline-block px-2 py-1 text-xs font-medium text-white ${badgeClasses} rounded-full">${project.badge}</span>
             </div>
             <h3 class="text-lg font-semibold text-title mb-3">${project.title}</h3>
             <p class="text-gray-700 dark:text-gray-300">${project.description}</p>
           </div>
-          <div class="flex gap-3 -mb-[--card-padding] py-4 border-t">
+          <div class="flex gap-3 -mb-[--card-padding] py-4 border-t mt-auto">
             ${buttonHTML}
           </div>
         </div>

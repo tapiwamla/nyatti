@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "id": "quest",
+      "title": "Quest Food",
+      "description": "Complete restaurant management system with integrated website, payment processing, order management, order tracking, and mobile-responsive design for seamless operations.",
+      "image": "/images/quest.png",
+      "url": "https://quest.nyatti.com",
+      "category": "app",
+      "badge": "App",
+      "badgeColor": "blue",
+      "status": "live",
+      "featured": true,
+      "order": 1
+    },
+    {
       "id": "tushop",
       "title": "Tushop",
       "description": "POS & Grocery Shop management system built for efficient retail operations and inventory management.",
@@ -11,7 +24,7 @@
       "badgeColor": "blue",
       "status": "live",
       "featured": true,
-      "order": 1
+      "order": 2
     },
     {
       "id": "pocket",
@@ -23,8 +36,8 @@
       "badge": "App",
       "badgeColor": "blue",
       "status": "launching-soon",
-      "featured": true,
-      "order": 2
+      "featured": false,
+      "order": 3
     },
     {
       "id": "btools",
@@ -37,7 +50,20 @@
       "badgeColor": "blue",
       "status": "launching-soon",
       "featured": true,
-      "order": 3
+      "order": 4
+    },
+    {
+      "id": "quest-website",
+      "title": "Quest Food",
+      "description": "Complete restaurant management system with integrated website, payment processing, order management, order tracking, and mobile-responsive design for seamless operations.",
+      "image": "/images/quest.png",
+      "url": "https://quest.nyatti.com",
+      "category": "website",
+      "badge": "App",
+      "badgeColor": "blue",
+      "status": "live",
+      "featured": true,
+      "order": 1
     },
     {
       "id": "winmer",
@@ -50,7 +76,7 @@
       "badgeColor": "yellow",
       "status": "live",
       "featured": true,
-      "order": 1
+      "order": 2
     },
     {
       "id": "mercy",
@@ -63,7 +89,7 @@
       "badgeColor": "yellow",
       "status": "live",
       "featured": true,
-      "order": 2
+      "order": 3
     },
     {
       "id": "upendo-family",
@@ -76,7 +102,7 @@
       "badgeColor": "yellow",
       "status": "live",
       "featured": true,
-      "order": 3
+      "order": 4
     },
     {
       "id": "upendo-donations",
@@ -89,7 +115,7 @@
       "badgeColor": "yellow",
       "status": "live",
       "featured": false,
-      "order": 4
+      "order": 5
     },
     {
       "id": "legends",
@@ -102,7 +128,7 @@
       "badgeColor": "yellow",
       "status": "live",
       "featured": false,
-      "order": 5
+      "order": 6
     },
     {
       "id": "ahav",
@@ -115,7 +141,20 @@
       "badgeColor": "yellow",
       "status": "live",
       "featured": false,
-      "order": 6
+      "order": 7
+    },
+    {
+      "id": "quest-ecommerce",
+      "title": "Quest Food",
+      "description": "Complete restaurant management system with integrated website, payment processing, order management, order tracking, and mobile-responsive design for seamless operations.",
+      "image": "/images/quest.png",
+      "url": "https://quest.nyatti.com",
+      "category": "ecommerce",
+      "badge": "App",
+      "badgeColor": "blue",
+      "status": "live",
+      "featured": true,
+      "order": 1
     },
     {
       "id": "royaltek",
@@ -128,7 +167,7 @@
       "badgeColor": "green",
       "status": "live",
       "featured": true,
-      "order": 1
+      "order": 2
     },
     {
       "id": "proxima",
@@ -141,7 +180,7 @@
       "badgeColor": "green",
       "status": "live",
       "featured": true,
-      "order": 2
+      "order": 3
     },
     {
       "id": "pirana",
@@ -154,7 +193,7 @@
       "badgeColor": "green",
       "status": "launching-soon",
       "featured": true,
-      "order": 3
+      "order": 4
     }
   ]
 }

@@ -99,6 +99,21 @@
     <section>
         <div class="pt-36">
             <div class="mx-auto px-6 max-w-6xl">
+                <div id="websites-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/projectsRenderer.js"></script>
+    <script>
+        const renderer = new ProjectsRenderer();
+        renderer.render('websites-container', { category: 'website' });
+    </script>
+
+    <!-- Original hardcoded section for reference -->
+    <section class="hidden">
+        <div class="pt-36">
+            <div class="mx-auto px-6 max-w-6xl">
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     <!-- Winmer Enterprises -->
                     <div class="relative group overflow-hidden card variant-outlined">
