@@ -10,5 +10,6 @@
       "destination": "https://meet.google.com/cyz-xstw-nan",
       "permanent": false
     }
-  ]
+  ],
+  "cleanUrls": true
 }
